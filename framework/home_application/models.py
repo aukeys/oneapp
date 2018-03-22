@@ -10,3 +10,9 @@ See the License for the specific language governing permissions and limitations 
 """
 
 # from django.db import models
+from django.db import models
+
+class MultRecord(models.Model):
+    multiplier = models.IntegerField(u"乘数")
+    multiplicand = models.IntegerField(u"被乘数")
+    mult_result = models.IntegerField(u"结果")
