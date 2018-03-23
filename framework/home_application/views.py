@@ -14,7 +14,7 @@ from common.mymako import render_mako_context,render_json
 
 def home(request):
     """
-    首页1
+    首页12
     """
     return render_mako_context(request, '/home_application/home.html')
 
