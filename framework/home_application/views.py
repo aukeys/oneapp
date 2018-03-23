@@ -9,15 +9,16 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License.
 """
 
-from common.mymako import render_mako_context,render_json
+# from common.mymako import render_mako_context,render_json
+from
 #from django.http import JsonResponse
-from home_application.models import MultRecord
-# from models import MultRecord
+# from home_application.models import MultRecord
+from models import MultRecord
 def home(request):
     """
     首页12
     """
-    all_record = MultRecord.object.all()
+    all_record = MultRecord.objects.all()
     ctx = {
         'all_record': all_record
     }
