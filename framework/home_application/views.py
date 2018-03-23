@@ -12,6 +12,7 @@ See the License for the specific language governing permissions and limitations 
 from common.mymako import render_mako_context,render_json
 #from django.http import JsonResponse
 from home_application.models import MultRecord
+# from models import MultRecord
 def home(request):
     """
     首页12
@@ -27,7 +28,7 @@ def multiplication_computer(request):
     multiplicand = int(request.POST.get('multiplicand'))
     mult_result = multiplier * multiplicand
     mult_record = MultRecord(multiplier=multiplier,multiplicand=multiplicand,mult_result=mult_result)
-    mult_result.save()
+    mult_record.save()
     return render_json({'result': True,'mult_result': mult_result})
 
 def dev_guide(request):
