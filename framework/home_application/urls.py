@@ -8,7 +8,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and limitations under the License.
 """
-
+#+ multiplication_computer
 from django.conf.urls import patterns
 
 urlpatterns = patterns(
@@ -16,4 +16,5 @@ urlpatterns = patterns(
     (r'^$', 'home'),
     (r'^dev-guide/$', 'dev_guide'),
     (r'^contactus/$', 'contactus'),
+    (r'^multiplication_computer/$', 'multiplication_computer'),
 )
