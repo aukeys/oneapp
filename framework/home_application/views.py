@@ -8,7 +8,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and limitations under the License.
 """
-
+##
 from common.mymako import render_mako_context,render_json
 #from django.http import JsonResponse
 # from home_application.models import MultRecord
