@@ -19,9 +19,9 @@ def home(request):
     """
     all_record = MultRecord.objects.all()
     ctx = {
-        'all_record': all_record
+        'all_record' : all_record
     }
-    return render_mako_context(request, '/home_application/home.html')
+    return render_mako_context(request, '/home_application/home.html',ctx)
 
 def multiplication_computer(request):
     multiplier = int(request.POST.get('multiplier'))
